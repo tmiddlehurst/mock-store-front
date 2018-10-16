@@ -18,17 +18,23 @@ export default function() {
         name: 'Shoes',
         topThree: [
           {name: 'foo', imgUrl: ''},
+          {name: 'foo', imgUrl: ''},
+          {name: 'foo', imgUrl: ''},
         ]
       },
       {
         name: 'Hats',
         topThree: [
           {name: 'foo', imgUrl: ''},
+          {name: 'foo', imgUrl: ''},
+          {name: 'foo', imgUrl: ''},
         ]
       },
       {
         name: 'Coats',
         topThree: [
+          {name: 'foo', imgUrl: ''},
+          {name: 'foo', imgUrl: ''},
           {name: 'foo', imgUrl: ''},
         ]
       },

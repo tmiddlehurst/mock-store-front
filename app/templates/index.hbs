@@ -1,1 +1,20 @@
 {{outlet}}
+<div class="promotion">
+  <span>{{this.model.currentPromotion.title}}</span>
+  <span> EXPIRES IN: </span>
+  {{uppercase (moment-from-now this.model.currentPromotion.expires hideAffix=true)}}
+  <img src={{this.model.currentPromotion.imgUrl}}>
+</div>
+
+<div class="homepage_categories">
+  {{#each this.model.categories as |category|}}
+    <div class="category card mb-4 p-4">
+      <div clas="category-title">{{category.name}}</div>
+      <div class="category-top_three">
+        {{#each category.topThree as |item|}}
+          <img src={{item.imgUrl}} alt={{item.name}}>
+        {{/each}}
+      </div>
+    </div>
+  {{/each}}
+</div>
